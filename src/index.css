@@ -1,0 +1,132 @@
+
+@import "tailwindcss";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #FAFAF8;
+  color: #20242C;
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+section {
+  scroll-margin-top: 84px;
+}
+
+
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.35;
+  }
+}
+
+@keyframes imageReveal {
+  from {
+    clip-path: inset(0 0 100% 0);
+  }
+
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes heroTextUp {
+  from {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes skillReveal {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-note {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.work-card.show .work-arrow,
+.work-card:hover .work-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.work-arrow {
+  transform: translateX(-4px);
+}
+
+.work-thumb::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    160deg,
+    rgba(44, 74, 110, 0.28),
+    rgba(86, 174, 203, 0.18)
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.work-card:hover .work-thumb::after {
+  opacity: 1;
+}
+
+.work-thumb img {
+  transition: transform 0.5s ease;
+}
+
+.work-card:hover .work-thumb img {
+  transform: scale(1.045);
+}
+
+
+
+.other-projects-track {
+  animation: moveLeft 50s linear infinite;
+}
+
+.other-projects-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes moveLeft {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-50% - 9px));
+  }
+}
