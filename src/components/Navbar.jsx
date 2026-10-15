@@ -13,7 +13,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed py-2 top-0 left-0 z-[1000] w-full border-b border-[#2C4A6E]/15 bg-[#FAFAF8]/95 backdrop-blur-lg">
+    <nav className="fixed py-2 top-0 left-0 z-[1000] w-full border-b border-[#2C4A6E]/15 bg-[#FAFAF8]/90 backdrop-blur-lg">
       <div className="mx-auto flex max-w-[1200px] items-center justify-between px-6 py-4">
 
         {/* Brand */}
