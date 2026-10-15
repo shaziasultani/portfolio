@@ -43,16 +43,18 @@ export default function Navbar() {
 
         {/* Navigation links */}
         <ul
-          className={`absolute left-0 top-full w-full flex-col gap-6 border-b border-[#2C4A6E]/15 bg-[#FAFAF8] px-6 transition-all duration-300 ease-in-out md:static md:flex md:w-auto md:flex-row md:items-center md:gap-7 md:border-0 md:bg-transparent md:p-0 ${
+          className={`absolute left-0 top-full w-full flex-col gap-6 overflow-hidden border-b border-[#2C4A6E]/15 bg-[#FAFAF8] px-6 transition-[max-height,opacity,padding] duration-500 ease-in-out md:static md:flex md:max-h-none md:w-auto md:flex-row md:items-center md:gap-7 md:overflow-visible md:border-0 md:bg-transparent md:p-0 ${
             menuOpen
-              ? "visible flex translate-y-0 opacity-100"
-              : "invisible hidden -translate-y-2 opacity-0 md:visible md:translate-y-0 md:opacity-100"
+              ? "flex max-h-[320px] py-6 opacity-100"
+              : "flex max-h-0 py-0 opacity-0 md:max-h-none md:opacity-100"
           }`}
+          aria-hidden={!menuOpen}
         >
           {links.map((link, index) => (
             <li key={link.href}>
               <a
                 href={link.href}
+                tabIndex={menuOpen ? 0 : -1}
                 onClick={() => setMenuOpen(false)}
                 className={`group relative pb-1 text-lg text-[#2C4A6E] no-underline ${
                   index === 0 ? "after:w-0" : "after:w-0"
