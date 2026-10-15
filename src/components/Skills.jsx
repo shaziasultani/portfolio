@@ -17,7 +17,7 @@ import {
 
 export default function Skills() {
   return (
-    <section id="skills" className="bg-[#FAFAF8] px-20 py-20">
+    <section id="skills" className="bg-[#FAFAF8] px-4 py-20 sm:px-6 md:px-20">
       <div className="mx-auto max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 25 }}
