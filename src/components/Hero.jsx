@@ -14,7 +14,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, ease: [0.77, 0, 0.18, 1] }}
           >
-            <div className="mb-[18px] translate-y-[26px] translate-x-[5px] inline-flex items-center gap-2 text-[13.5px] text-[#56AECB]">
+            <div className="mb-[18px] translate-y-[26px] inline-flex items-center gap-2 text-[13.5px] text-[#56AECB]">
               <span className="h-[7px] w-[7px] animate-[pulse_2s_ease-in-out_infinite] rounded-full bg-[#56AECB]" />
               Available for Freelance
             </div>
