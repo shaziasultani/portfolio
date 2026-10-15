@@ -1,4 +1,3 @@
-
 import { FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 import img from "../assets/image/img.png";
@@ -16,7 +15,7 @@ export default function Hero() {
         >
           <div className="mb-[18px] inline-flex items-center gap-2 text-[13.5px] text-[#56AECB]">
             <span className="h-[7px] w-[7px] animate-[pulse_2s_ease-in-out_infinite] rounded-full bg-[#56AECB]" />
-           Available for Freelance
+            Available for Freelance
           </div>
 
           <h1 className="mb-[22px] font-['Space_Grotesk'] text-[clamp(38px,5vw,60px)] font-semibold leading-[1.08] tracking-[-0.02em] text-[#2C4A6E]">
@@ -40,7 +39,7 @@ export default function Hero() {
 
             <a
               href="#contact"
-              className="border-b border-[#2C4A6E]/15 pb-0.5 text-[14.5px] text-[#2C4A6E] no-underline transition duration-300 hover:border-[#56AECB] hover:text-[#56AECB]"
+              className="inline-flex items-center rounded-lg px-6 py-[13px] text-[14.5px] font-medium text-[#2C4A6E] no-underline shadow-[0_2px_8px_rgba(44,74,110,0.10)] transition duration-300 hover:-translate-y-px hover:text-[#56AECB] hover:shadow-[0_4px_12px_rgba(44,74,110,0.16)]"
             >
               Get in touch
             </a>
