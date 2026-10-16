@@ -65,16 +65,16 @@ export default function Projects() {
         <section className="min-h-screen bg-[#FAFAF8] px-6 py-20">
             <div className="mx-auto max-w-[1200px]">
 
-                {/* Back to Selected Works */}
+                {/* Back to Selected Works
                 <div className="mb-8">
                     <a
                         href="/portfolio/"
                         onClick={() => sessionStorage.setItem("scrollToWorks", "true")}
                         className="inline-flex items-center rounded-lg px-2 py-2 text-[14.5px] font-medium text-[#2C4A6E] no-underline shadow-[0_2px_8px_rgba(44,74,110,0.10)] transition duration-300 hover:-translate-y-px hover:text-[#56AECB] hover:shadow-[0_4px_12px_rgba(44,74,110,0.16)]"
                     >
-                        ← Go Back to Selected Works
+                        Go Back to Selected Works
                     </a>
-                </div>
+                </div> */}
 
                 <motion.div
                     initial={{ opacity: 0, y: 25 }}
