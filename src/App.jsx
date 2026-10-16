@@ -1,3 +1,5 @@
+
+import { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
@@ -9,6 +11,18 @@ import Footer from "./components/Footer";
 import Projects from "./components/Projects";
 
 function Home() {
+  useEffect(() => {
+    if (sessionStorage.getItem("scrollToWorks") === "true") {
+      sessionStorage.removeItem("scrollToWorks");
+
+      requestAnimationFrame(() => {
+        document.getElementById("works")?.scrollIntoView({
+          behavior: "smooth",
+        });
+      });
+    }
+  }, []);
+
   return (
     <>
       <Navbar />
