@@ -3,39 +3,39 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-import digital from "../assets/image/digital.png";
-import realEast from "../assets/image/real-east.png";
+import netlinks from "../assets/image/netlinks.png";
+import zohco from "../assets/image/zohco.png";
 import python from "../assets/image/python.png";
-import onlineLearning from "../assets/image/online-learning.png";
-import respon from "../assets/image/respon.png";
+import nexor from "../assets/image/nexor.png";
+import education from "../assets/image/education.png";
 import mentor from "../assets/image/mentor.png";
 
 const projects = [
   {
-    title: "Digital Marketing Website",
-    image: digital,
-    link: "https://6a61e3946d408da256fdcb43--harmonious-gumption-e1be4d.netlify.app/",
+    title: "Netlinks Website",
+    image: netlinks,
+    link: "https://sensational-otter-97a60e.netlify.app/",
     description:
-      "A modern website designed to showcase digital marketing services with a clean, engaging interface.",
-    category: "Marketing",
+      "A modern corporate website showcasing enterprise software, Odoo solutions, and AI-powered services through a professional, responsive design.",
+    category: "Corporate Website",
     highlights: [
-      "Digital marketing services",
-      "Clean and engaging interface",
+      "Enterprise software and service presentation",
+      "Modern navigation and responsive layout",
     ],
-    technologies: ["React", "JavaScript"],
+    technologies: ["React", "Tailwind CSS", "Framer Motion"],
   },
   {
-    title: "Real Estate",
-    image: realEast,
-    link: "https://6a722a9c0e65a40e69543147--lively-kitsune-b3d5f7.netlify.app/",
+    title: "Zohco Website",
+    image: zohco,
+    link: "https://6ad8fb91e2ebd8369f50207d--zohco-website.netlify.app/",
     description:
-      "A clean real estate website designed to help users explore properties and connect with services.",
-    category: "Real Estate",
+      "A sustainability-focused website promoting eco-friendly living and renewable energy through immersive imagery and a clean, modern interface.",
+    category: "Sustainability Website",
     highlights: [
-      "Property exploration",
-      "User-friendly layout",
+      "Immersive, image-led landing page",
+      "Clean navigation and nature-inspired design",
     ],
-    technologies: ["React", "CSS"],
+    technologies: ["HTML", "CSS", "JavaScript"],
   },
   {
     title: "Student Management System",
@@ -44,49 +44,44 @@ const projects = [
     description:
       "A Python-based system for managing students, courses, assessments, grades, and academic records.",
     category: "Python",
-    highlights: [
-      "Student and course management",
-      "Grade tracking",
-    ],
+    highlights: ["Student and course management", "Grade tracking"],
     technologies: ["Python"],
   },
   {
-    title: "Online Learning Platform",
-    image: onlineLearning,
-    link: "https://6a8efd07c22f2bf179ca0448--graceful-gingersnap-64838f.netlify.app/",
+    title: "Nexor Website",
+    image: nexor,
+    link: "https://shaziasultani.github.io/nexor-website/",
     description:
-      "An online learning interface designed to help users discover courses and explore opportunities.",
-    category: "Education",
+      "A modern business website featuring a refined visual identity, clear messaging, and a professional presentation of business services.",
+    category: "Business Website",
     highlights: [
-      "Course discovery",
-      "Learning-focused interface",
+      "Clean and professional visual hierarchy",
+      "Responsive layout with clear calls to action",
     ],
-    technologies: ["React", "Tailwind CSS"],
+    technologies: ["React", "Tailwind CSS", "Framer Motion"],
   },
   {
-    title: "Responsive Blog Website",
-    image: respon,
-    link: "https://6a63b7c49a8ca1bde58e5320--vermillion-marzipan-0ef82b.netlify.app/",
+    title: "EduLearn Website",
+    image: education,
+    link: "https://github.com/shaziasultani/educational-website1",
+    linkLabel: "View repository ↗",
     description:
-      "A responsive blog website focused on presenting articles through a clean, user-friendly layout.",
-    category: "Blog",
+      "An educational website designed to support students in their learning journey, featuring course exploration, educational resources, and an accessible interface for discovering learning opportunities.",
+    category: "Educational Website",
     highlights: [
-      "Responsive layout",
-      "Article presentation",
+      "Course discovery and learning resources",
+      "Student-focused interface and navigation",
     ],
-    technologies: ["HTML", "CSS"],
+    technologies: ["HTML", "CSS", "JavaScript"],
   },
   {
     title: "Mentor Cards Website",
     image: mentor,
     link: "https://6a7caf65c0a3c2c8916d303d--stalwart-kangaroo-fe934c.netlify.app/",
     description:
-      "A mentor discovery interface featuring professional profiles, skills, ratings, and session info.",
+      "A mentor discovery interface featuring professional profiles, skills, ratings, and session information.",
     category: "Mentorship",
-    highlights: [
-      "Mentor profiles",
-      "Ratings and session information",
-    ],
+    highlights: ["Mentor profiles", "Ratings and session information"],
     technologies: ["React", "CSS"],
   },
 ];
@@ -125,7 +120,8 @@ export default function SelectedWorks() {
           </h2>
 
           <p className="section-note text-[17px] leading-[1.7] text-[#20242C]">
-            A selection of projects showcasing my web development and design skills.
+            A selection of projects showcasing my web development and design
+            skills.
           </p>
         </motion.div>
 
@@ -251,7 +247,7 @@ export default function SelectedWorks() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-md bg-[#2C4A6E] px-4 py-3 text-[14.5px] font-medium text-[#FAFAF8] no-underline transition-colors duration-300 hover:bg-[#56AECB]"
               >
-                Visit live site ↗
+                {project.linkLabel || "Visit live site ↗"}
               </a>
 
               <Link
@@ -263,13 +259,13 @@ export default function SelectedWorks() {
             </motion.div>
           </div>
 
-          {/* Project preview - image only */}
+          {/* Project preview - wider image with object-cover */}
           <motion.a
             variants={itemVariants}
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="block overflow-hidden"
+            className="block w-full overflow-hidden rounded-lg md:mr-[-10%] md:w-[100%]"
             whileHover={{ y: -3 }}
             transition={{ duration: 0.25 }}
           >
@@ -277,7 +273,7 @@ export default function SelectedWorks() {
               key={project.image}
               src={project.image}
               alt={project.title}
-              className="aspect-[4/3] w-full object-cover rounded-lg shadow-[0_10px_20px_rgba(44,74,110,0.18)]"
+              className="h-auto w-full rounded-lg object-cover shadow-[0_10px_20px_rgba(44,74,110,0.18)] md:aspect-[4/3]"
               initial={{ opacity: 0, scale: 1.04 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6 }}

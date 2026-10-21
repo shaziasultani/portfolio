@@ -14,7 +14,64 @@ import project7 from "../assets/image/reb.png";
 import digital from "../assets/image/digital.png";
 import mentor from "../assets/image/mentor.png";
 
+import netlinks from "../assets/image/netlinks.png";
+import zohco from "../assets/image/zohco.png";
+import nexor from "../assets/image/nexor.png";
+
 const projects = [
+    // ================= WEB DEVELOPMENT PROJECTS =================
+    {
+        img: realEast,
+        title: "Real Estate Website",
+        category: "Web Development",
+        description:
+            "A real estate website presenting property information through a clean layout and user-friendly browsing experience.",
+        href: "https://6a722a9c0e65a40e69543147--lively-kitsune-b3d5f7.netlify.app/",
+    },
+    {
+        img: digital,
+        title: "Digital Marketing Website",
+        category: "Web Development",
+        description:
+            "A digital marketing website presenting services through an engaging interface and clearly structured content.",
+        href: "https://6a61e3946d408da256fdcb43--harmonious-gumption-e1be4d.netlify.app/",
+    },
+    {
+        img: mentor,
+        title: "Mentor Cards Website",
+        category: "Web Development",
+        description:
+            "A mentor-focused website presenting profiles and key information in an organized, easy-to-explore card layout.",
+        href: "https://6a7caf65c0a3c2c8916d303d--stalwart-kangaroo-fe934c.netlify.app/",
+    },
+    {
+        img: project1, // Replace with the original blog screenshot if different
+        title: "Responsive Blog Website",
+        category: "Web Development",
+        description:
+            "A responsive blog website designed to present articles and content in a clean, readable layout across desktop, tablet, and mobile devices.",
+        href: "YOUR_ORIGINAL_RESPONSIVE_BLOG_WEBSITE_LINK",
+    },
+
+    // ================= PYTHON PROJECTS =================
+    {
+        img: python,
+        title: "Student Management System",
+        category: "Python",
+        description:
+            "A Python-based system for organizing student information and managing academic records.",
+        href: "https://github.com/shaziasultani/Python_final_project",
+    },
+    {
+        img: project7,
+        title: "Reeborg's Hurdle",
+        category: "Python Game Development",
+        description:
+            "A Python-based game challenge focused on programming logic, loops, conditional statements, and guiding Reeborg through hurdles.",
+        href: "https://x.com/shazia__sultani/status/2022742307846656358?s=20",
+    },
+
+    // ================= GRAPHIC DESIGN PROJECTS =================
     {
         img: project1,
         title: "Creative Design Project",
@@ -46,46 +103,6 @@ const projects = [
         description:
             "A visual project combining design elements to create a clear, attractive, and memorable result.",
         href: "https://x.com/shazia__sultani/status/1624759314609995776?s=20",
-    },
-    {
-        img: python,
-        title: "Student Management System",
-        category: "Python",
-        description:
-            "A Python-based system for organizing student information and managing academic records.",
-        href: "https://github.com/shaziasultani/Python_final_project",
-    },
-    {
-        img: realEast,
-        title: "Real Estate Website",
-        category: "Web Development",
-        description:
-            "A real estate website presenting property information through a clean layout and user-friendly browsing experience.",
-        href: "https://6a722a9c0e65a40e69543147--lively-kitsune-b3d5f7.netlify.app/",
-    },
-    {
-    img: project7,
-    title: "Reeborg's Hurdle",
-    category: "Python Game Development",
-    description:
-        "A Python-based game challenge focused on programming logic, loops, conditional statements, and guiding Reeborg through hurdles.",
-    href: "https://x.com/shazia__sultani/status/2022742307846656358?s=20",
-},
-    {
-        img: digital,
-        title: "Digital Marketing Website",
-        category: "Web Development",
-        description:
-            "A digital marketing website presenting services through an engaging interface and clearly structured content.",
-        href: "https://6a61e3946d408da256fdcb43--harmonious-gumption-e1be4d.netlify.app/",
-    },
-    {
-        img: mentor,
-        title: "Mentor Cards Website",
-        category: "Web Development",
-        description:
-            "A mentor-focused website presenting profiles and key information in an organized, easy-to-explore card layout.",
-        href: "https://6a7caf65c0a3c2c8916d303d--stalwart-kangaroo-fe934c.netlify.app/",
     },
 ];
 
