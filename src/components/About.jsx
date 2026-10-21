@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 
 export default function About() {
@@ -95,7 +94,6 @@ export default function About() {
 
       {/* About text and timeline */}
       <div className="mx-auto grid max-w-[1200px] grid-cols-1 gap-12 px-6 md:grid-cols-[0.8fr_1.2fr] md:gap-20">
-
         {/* About description */}
         <motion.div
           initial={{ opacity: 0, x: -25 }}
@@ -114,7 +112,7 @@ export default function About() {
         </motion.div>
 
         {/* Education and experience timeline */}
-        <div className="border-l border-[#2C4A6E]/15 pl-8">
+        <div className="min-w-0 border-l border-[#2C4A6E]/15 pl-6 sm:pl-8">
           {timeline.map((item, index) => (
             <motion.div
               key={`${item.date}-${item.title}-${item.org}`}
@@ -123,11 +121,13 @@ export default function About() {
               viewport={{ once: true, amount: 0.15 }}
               transition={{ duration: 0.6, delay: 0.1 }}
               className={`relative z-[1] bg-[#FAFAF8] md:sticky md:top-[180px] ${
-                index === timeline.length - 1 ? "pb-0" : "pb-[100px]"
+                index === timeline.length - 1
+                  ? "pb-0"
+                  : "pb-[60px] sm:pb-[80px] md:pb-[100px]"
               }`}
             >
               {/* Timeline dot */}
-              <span className="absolute -left-[37px] top-[5px] h-[9px] w-[9px] rounded-full border-2 border-[#56AECB] bg-[#FAFAF8]" />
+              <span className="absolute -left-[31px] top-[5px] h-[9px] w-[9px] rounded-full border-2 border-[#56AECB] bg-[#FAFAF8] sm:-left-[37px]" />
 
               <span className="mb-1.5 block text-[12.5px] tracking-[0.02em] text-[#56AECB]">
                 {item.date}
@@ -147,7 +147,6 @@ export default function About() {
             </motion.div>
           ))}
         </div>
-
       </div>
     </section>
   );
