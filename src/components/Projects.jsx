@@ -1,4 +1,3 @@
-
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -13,10 +12,7 @@ import realEast from "../assets/image/real-east.png";
 import project7 from "../assets/image/reb.png";
 import digital from "../assets/image/digital.png";
 import mentor from "../assets/image/mentor.png";
-
-import netlinks from "../assets/image/netlinks.png";
-import zohco from "../assets/image/zohco.png";
-import nexor from "../assets/image/nexor.png";
+import education from "../assets/image/education.png";
 
 const projects = [
     // ================= WEB DEVELOPMENT PROJECTS =================
@@ -45,12 +41,12 @@ const projects = [
         href: "https://6a7caf65c0a3c2c8916d303d--stalwart-kangaroo-fe934c.netlify.app/",
     },
     {
-        img: project1, // Replace with the original blog screenshot if different
-        title: "Responsive Blog Website",
-        category: "Web Development",
+        img: education,
+        title: "EduLearn Website",
+        category: "Educational Website",
         description:
-            "A responsive blog website designed to present articles and content in a clean, readable layout across desktop, tablet, and mobile devices.",
-        href: "YOUR_ORIGINAL_RESPONSIVE_BLOG_WEBSITE_LINK",
+            "An educational website designed to support students in their learning journey, featuring course exploration, educational resources, and an accessible interface for discovering learning opportunities.",
+        href: "https://github.com/shaziasultani/educational-website1",
     },
 
     // ================= PYTHON PROJECTS =================

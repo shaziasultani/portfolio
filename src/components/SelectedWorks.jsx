@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -7,6 +6,7 @@ import netlinks from "../assets/image/netlinks.png";
 import zohco from "../assets/image/zohco.png";
 import python from "../assets/image/python.png";
 import nexor from "../assets/image/nexor.png";
+import AxenLtd from "../assets/image/AxenLtd.png";
 import education from "../assets/image/education.png";
 import mentor from "../assets/image/mentor.png";
 
@@ -61,19 +61,20 @@ const projects = [
     technologies: ["React", "Tailwind CSS", "Framer Motion"],
   },
   {
-    title: "EduLearn Website",
-    image: education,
-    link: "https://github.com/shaziasultani/educational-website1",
-    linkLabel: "View repository ↗",
+    title: "Axen Ltd",
+    image: AxenLtd,
+    link: "https://shaziasultani.github.io/Bootcamp-three-/",
     description:
-      "An educational website designed to support students in their learning journey, featuring course exploration, educational resources, and an accessible interface for discovering learning opportunities.",
-    category: "Educational Website",
+      "A collaborative business website developed as a group project during our bootcamp, featuring a professional digital presence and a clear presentation of business services.",
+    category: "Group Project",
     highlights: [
-      "Course discovery and learning resources",
-      "Student-focused interface and navigation",
+      "Collaborative website development during bootcamp",
+      "Professional business-focused design",
+      "Responsive layout and interactive user interface",
     ],
-    technologies: ["HTML", "CSS", "JavaScript"],
+    technologies: ["React.js", "React Router", "Tailwind CSS"],
   },
+
   {
     title: "Mentor Cards Website",
     image: mentor,
@@ -259,7 +260,7 @@ export default function SelectedWorks() {
             </motion.div>
           </div>
 
-          {/* Project preview - wider image with object-cover */}
+          {/* Project preview */}
           <motion.a
             variants={itemVariants}
             href={project.link}
