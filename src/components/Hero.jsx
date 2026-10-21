@@ -20,7 +20,7 @@ export default function Hero() {
             </div>
 
             <h1 className="mb-[22px] font-['Space_Grotesk'] text-[clamp(28px,3.5vw,42px)] font-semibold leading-[1.08] tracking-[-0.02em] text-[#2C4A6E]">
-              <span className="inline-block text-sm translate-y-[13px]">
+              <span className="inline-block text-[18px] translate-y-[25px]">
                 Hello, I'm
               </span> <br />
               <br />
